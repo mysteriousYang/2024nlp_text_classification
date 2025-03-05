@@ -1,0 +1,13 @@
+{
+  "tag": {
+    "mutable": false,
+    "unk_token": "B",
+    "pad_token": null,
+    "idx_to_token": [
+      "B",
+      "E",
+      "S",
+      "M"
+    ]
+  }
+}

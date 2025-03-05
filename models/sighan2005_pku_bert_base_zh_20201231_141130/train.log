@@ -1,0 +1,64 @@
+{
+  "adam_epsilon": 1e-06,
+  "average_subwords": false,
+  "batch_max_tokens": null,
+  "batch_size": 32,
+  "char_level": true,
+  "classpath": "hanlp.components.tokenizers.transformer.TransformerTaggingTokenizer",
+  "crf": false,
+  "delimiter": null,
+  "epochs": 3,
+  "finetune": false,
+  "grad_norm": 5.0,
+  "gradient_accumulation": 1,
+  "hanlp_version": "2.1.0-alpha.0",
+  "hard_constraint": true,
+  "hidden_dropout": null,
+  "layer_dropout": 0,
+  "lr": 5e-05,
+  "max_seq_len": 300,
+  "max_sequence_length": null,
+  "mix_embedding": 0,
+  "patience": 5,
+  "reduction": "sum",
+  "ret_raw_hidden_states": false,
+  "sampler_builder": {
+    "classpath": "hanlp.common.dataset.SortingSamplerBuilder",
+    "batch_max_tokens": null,
+    "batch_size": 32
+  },
+  "scalar_mix": null,
+  "secondary_encoder": null,
+  "seed": 1609422632,
+  "sent_delimiter": null,
+  "tagging_scheme": "BMES",
+  "token_key": null,
+  "transform": null,
+  "transformer": "bert-base-chinese",
+  "transformer_grad_norm": null,
+  "transformer_layers": null,
+  "transformer_lr": null,
+  "warmup_steps": 0.1,
+  "weight_decay": 0.01,
+  "word_dropout": 0.1
+}
+Guess token_key=token according to the training dataset: 19922 samples: {'token': ['迈向', '充满', '希望', '的', '新', '世纪', '——', '一九九八年', '新年', '讲话', '（', '附', '图片', '１', '张', '）']} ...
+tag[4] = ['B', 'E', 'S', 'M']
+Model built with 102270724/102270724 trainable/total parameters.
+Using GPUs: [0]
+19922/2004 samples in trn/dev set.
+Epoch 1 / 3:
+623/623 loss: 1016.5258 P: 84.75% R: 83.30% F1: 84.02% ET: 2 m 53 s
+  63/63 loss: 353.0681 P: 96.49% R: 95.54% F1: 96.01% ET: 5 s
+2 m 57 s / 8 m 52 s ETA: 5 m 55 s (saved)
+Epoch 2 / 3:
+623/623 loss: 244.6400 P: 90.65% R: 89.83% F1: 90.24% ET: 2 m 55 s
+  63/63 loss: 348.7963 P: 96.57% R: 96.37% F1: 96.47% ET: 5 s
+5 m 59 s / 8 m 59 s ETA: 3 m 0 s (saved)
+Epoch 3 / 3:
+623/623 loss: 187.6009 P: 92.85% R: 92.28% F1: 92.57% ET: 2 m 55 s
+  63/63 loss: 341.0020 P: 96.93% R: 96.39% F1: 96.66% ET: 5 s
+9 m 2 s / 9 m 2 s ETA: 0 s (saved)
+Max score of dev is P: 96.93% R: 96.39% F1: 96.66% at epoch 3
+Average time of each epoch is 3 m 1 s
+9 m 2 s elapsed
